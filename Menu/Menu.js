@@ -33,3 +33,43 @@ let menuItems = [
   Step 6: add the menu component to the DOM.
   
 */
+
+// const menuObj = document.querySelector('.header')
+// menuItems.forEach(links => {
+//  menuObj.appendChild(createMenu(links));
+// })
+
+const menuCont = document.createElement('div');
+//Set class names
+menuCont.classList.add('menu');
+
+const menuButton = document.getElementsByClassName('header')[0];
+menuButton.appendChild(menuCont)
+
+//Define functional component here
+function createMenu(menuArray) {
+  //Define new elements
+  const listCont = document.createElement('ul');
+  menuCont.appendChild(listCont)
+  //Iterate over the array to create the list items <li>
+  menuArray.forEach(element => {
+    let men = document.createElement('li');
+    men.innerText = element;
+    listCont.appendChild(men);
+  })
+  //Setup structure of elements
+ // menuCont.appendChild(list);
+  //Toggle events
+  // Loop will not end - function invokes itself
+  //document.querySelector('body').appendChild(createMenu(menuItems));
+  
+  return menuCont;
+}
+  
+createMenu(menuItems);
+
+document.querySeleector('.menu-button').addEventListener('click', function() {
+    console.log('i work');
+    menuCont.classList.toggle('menu--open');
+})
+
