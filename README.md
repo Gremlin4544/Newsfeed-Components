@@ -16,10 +16,10 @@ In this project we are going to be building a news feed reader. The goal is to h
 
 **Follow these steps to set up and work on your project:**
 
-* [ ] Create a forked copy of this project.
-* [ ] Add your team lead as collaborator on Github.
-* [ ] Clone your OWN version of the repository (Not Lambda's by mistake!).
-* [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
+* [X ] Create a forked copy of this project.
+* [X ] Add your team lead as collaborator on Github.
+* [ X] Clone your OWN version of the repository (Not Lambda's by mistake!).
+* [ X] Create a new branch: git checkout -b `<firstName-lastName>`.
 * [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
 * [ ] Push commits: git push origin `<firstName-lastName>`.
 
@@ -31,7 +31,7 @@ In this project we are going to be building a news feed reader. The goal is to h
 
 ### Preprocessor Setup
 
-  * Run `less-watch-compiler less css index.less` from the top level of the Newsfeed-Components folder. 
+  X * Run `less-watch-compiler less css index.less` from the top level of the Newsfeed-Components folder. 
   * Open index.html in your browser
 
 ### Part 1: The Articles Component
